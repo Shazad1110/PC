@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.container {
+    background: white;
+    border-radius: 30px;
+    padding: 50px 40px;
+    max-width: 500px;
+    width: 100%;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+.app-icon-wrapper {
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.app-icon {
+    width: 150px;
+    height: 150px;
+    border-radius: 30px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.app-icon:hover {
+    transform: scale(1.05);
+}
+
+.app-title {
+    font-size: 32px;
+    font-weight: bold;
+    color: #2d3748;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.app-description {
+    font-size: 16px;
+    color: #4a5568;
+    line-height: 1.8;
+    margin-bottom: 35px;
+    padding: 0 10px;
+}
+
+.download-section {
+    margin-bottom: 20px;
+}
+
+.download-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    background: #007AFF;
+    color: white;
+    padding: 15px 40px;
+    border-radius: 15px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 122, 255, 0.3);
+}
+
+.download-btn:hover {
+    background: #0051D5;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(0, 122, 255, 0.4);
+}
+
+.apple-icon {
+    width: 24px;
+    height: 24px;
+}
+
+.tutorial-section {
+    margin-bottom: 30px;
+}
+
+.tutorial-btn {
+    display: inline-block;
+    background: #2d3748;
+    color: white;
+    padding: 12px 35px;
+    border-radius: 12px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(45, 55, 72, 0.3);
+}
+
+.tutorial-btn:hover {
+    background: #1a202c;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(45, 55, 72, 0.4);
+}
+
+.footer {
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid #e2e8f0;
+}
+
+.footer p {
+    color: #718096;
+    font-size: 14px;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .container {
+        padding: 40px 25px;
+    }
+
+    .app-icon {
+        width: 120px;
+        height: 120px;
+    }
+
+    .app-title {
+        font-size: 26px;
+    }
+
+    .app-description {
+        font-size: 14px;
+    }
+
+    .download-btn {
+        padding: 12px 30px;
+        font-size: 16px;
+    }
+
+    .tutorial-btn {
+        padding: 10px 25px;
+        font-size: 14px;
+    }
+}
